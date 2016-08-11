@@ -45,7 +45,7 @@ $(document).ready(function(){
 	$(document).on('click', '.baller', function(){
 		var baller = $(this).html();
 		// search API
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + baller + "&api_key=dc6zaTOxFJmzC&limit=12";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + baller + "&api_key=dc6zaTOxFJmzC&limit=12";
 
 		$.ajax({url: queryURL, method: 'GET'}).done(function(response) {
 			$('#topicView').empty();
